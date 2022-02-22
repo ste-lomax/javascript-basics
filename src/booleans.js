@@ -5,24 +5,34 @@ const negate = (a) => {
   else return true;
 };
 
-function both(a, b) {
-  // your code here
+const both = (a, b) => {
+  return (a) && (b);
 };
 
-function either(a, b) {
-  // your code here
+const either = (a, b) => {
+  return (a) || (b);
 };
 
-function none(a, b) {
-  // your code here
+const none = (a, b) => {
+  if (a && b) {
+    return false;  
+  } else if (a || b) {
+    return false;
+  } else return true;
 };
 
-function one(a, b) {
-  // your code here
+const one = (a, b) => {
+  if (a && b) {
+    return false;  
+  } else if (!a && !b) {
+    return false;
+  } else return true;
 };
 
-function truthiness(a) {
-  // your code here
+const truthiness = (a) => {
+  if (a) {
+    return true;
+  } else return false;
 };
 
 function isEqual(a, b) {
