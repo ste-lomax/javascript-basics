@@ -59,16 +59,16 @@ const isSquare = (a) => {
   return Math.sqrt(a) % 1 === 0;
 };
 
-function startsWith(char, string) {
-  // your code here
+const startsWith = (char, string) => {
+  return char === string.charAt(0);
 };
 
-function containsVowels(string) {
-  // your code here
+const containsVowels = (string) => {
+  return string.includes('a') || string.includes('e') || string.includes('i') || string.includes('o') || string.includes('u') || string.includes('A') || string.includes('E') || string.includes('I') || string.includes('O') || string.includes('U');
 };
 
 function isLowerCase(string) {
-  // your code here
+  return string === string.toLowerCase();
 };
 
 module.exports = {
