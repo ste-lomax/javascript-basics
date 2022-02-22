@@ -18,16 +18,16 @@ const power = (a, b) => {
   return a ** b;
 }
 
-function round (a) {
-  // your code here
+ const round = (a) => {
+  return Math.round(a);
 }
 
-function roundUp (a) {
-  // your code here
+const roundUp = (a) => {
+  return Math.ceil(a);
 }
 
-function roundDown (a) {
-  // your code here
+const roundDown = (a) => {
+  return Math.floor(a);
 }
 
 function absolute (a) {
