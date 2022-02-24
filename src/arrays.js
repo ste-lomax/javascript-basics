@@ -47,15 +47,17 @@ const elementsStartingWithAVowel = strings => {
 };
 
 const removeSpaces = string => {
-  // your code here
+  return string.split(' ').join('');
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  return numbers.reduce((sum, number) => sum + number);
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  return strings.sort(
+    (a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1)
+  );
 };
 
 module.exports = {
