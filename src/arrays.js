@@ -35,15 +35,15 @@ const reverseWordsInArray = strings => {
 };
 
 const onlyEven = numbers => {
-  // your code here
+  return numbers.filter(evenNumbers => evenNumbers % 2 === 0);
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  return array.slice(0, index).concat(array.slice(index + 1));
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  return strings.filter(startingVowel => /^[aeiou]/i.test(startingVowel));
 };
 
 const removeSpaces = string => {
