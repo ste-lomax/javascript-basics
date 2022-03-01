@@ -21,19 +21,19 @@ const isOver65 = person => {
 };
 
 const getAges = people => {
-  // your code here
+  return people.map(person => person.age);
 };
 
 const findByName = (name, people) => {
-  // your code here
+  return people.find(obj => obj.name === name);
 };
 
 const findHondas = cars => {
-  // your code here
+  return cars.filter(obj => obj.manufacturer === 'Honda');
 };
 
 const averageAge = people => {
-  // your code here
+  
 };
 
 const createTalkingPerson = (name, age) => {
